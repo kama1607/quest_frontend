@@ -31,7 +31,7 @@
             <v-list-item-title>Задачи</v-list-item-title>
           </v-list-item>  
 
-          <v-list-item link :to="{name: ''}">
+          <v-list-item link :to="{name: 'Answers'}">
             <v-list-item-title>
               Ответы
             </v-list-item-title>
