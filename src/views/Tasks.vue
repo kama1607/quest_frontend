@@ -57,6 +57,12 @@
                                 max-width="500px"
                               />
 
+                               <v-text-field
+                                max-width="400px"
+                                v-model="editedItem.question"
+                                label="Вопрос"
+                              />
+
                               <v-text-field
                                 max-width="400px"
                                 v-model="editedItem.latitude"
@@ -145,6 +151,7 @@
       headers: [
         {text: "Название квеста", value: "quest.name"},
         {text: "Правильный ответ", value: "answer.text"},
+        {text: "Вопрос", value: "question"},
         {text: "Широта" , value: "latitude"},
         {text: "Долгота" , value: "longitude"},
         {text: "Очки", value: "score"},
@@ -162,7 +169,7 @@
       latitude: "",
       longitude: "",
       score: "",
-      priority: ""
+      //priority: ""
     }
 
     }),

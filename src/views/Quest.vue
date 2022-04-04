@@ -45,13 +45,6 @@
                                 v-model="editedItem.description"
                                 label="Описание"
                               />
-
-                              <v-text-field
-                                max-width="400px"
-                                v-model="editedItem.createdAt"
-                                label="Дата создания"
-                              />
-
                             </v-col>
                           </v-row>
                         </v-container>
@@ -138,6 +131,7 @@ export default {
 
   created(){
     this.getQuests()
+    this.editedItem.createdAt = (new Date()).toISOString()
   },
 
   watch: {
@@ -231,16 +225,7 @@ export default {
         console.log(err)
       }
     }
-
-
-
-
   }
-
-
 }
-
-
-
 
 </script>
